@@ -3,11 +3,15 @@ body {
     background-color: blanchedalmond;
     margin: 0 auto;
 }
+.ac-section{
+    cursor: pointer;
+}
 .ac-section:hover .cross {
     background-image: url('../asset/svg/cross_plus.svg');
     background-repeat: no-repeat;
     transition: 1s;
 }
+
 .ac-section:hover .item-header {
     color: black;
     transition: 1s;
@@ -57,12 +61,23 @@ body {
 }
 .item:active  {
     opacity: 0.5;
+    cursor:grabbing;
+}
+.item:focus .item-header{
+    color: black;
 }
 .item:active .item-header {
     color: blue;
 }
+.item:focus {
+    max-height: 500px;
+}
+.item:focus .cross{
+    background-image: url('../asset/svg/cross.svg');
+    background-repeat: no-repeat;
+    transition: 1s;
+}
 .picture {
-    background-image: url('../asset/jpg/desert.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
