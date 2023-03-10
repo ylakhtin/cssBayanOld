@@ -1,0 +1,57 @@
+body {
+    max-width: 1000px;
+    background-color: blanchedalmond;
+    margin: 0 auto;
+}
+section:hover .item {
+    background-image: url('../asset/svg/cross_plus.svg');
+    background-position: right 5px top 5px;
+    background-repeat: no-repeat;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    text-align: center;
+}
+.accordeon-header{
+    color: black;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: left;
+    padding: 5px;
+}
+.item-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cross {
+    width: 32px;
+    height: 32px;
+}
+.item {
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+    border-top: 2px solid gray;
+    padding: 5px;
+    overflow: hidden;
+    height: 27px;
+    background: none;
+}
+.item:hover {
+    height: fit-content;
+    background-image: url('../asset/svg/cross.svg');
+    background-position: right 5px top 5px;
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+}
+.picture {
+    background-image: url('../asset/jpg/desert.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 300px;
+}
